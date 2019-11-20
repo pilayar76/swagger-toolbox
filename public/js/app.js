@@ -57,7 +57,8 @@ function tryParseJSON(jsonString) {
 function buildSwaggerJSON(data) {
   var keys = Object.keys(data);
   var op = {
-    required: keys,
+    //required: keys,
+    type: typeOf(data),
     properties: {}
   };
   keys.forEach(function(x) {
