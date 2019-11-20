@@ -40,6 +40,7 @@ function processJSON() {
   }
 }
 
+
 function tryParseJSON(jsonString) {
   try {
     var o = JSON.parse(jsonString);
